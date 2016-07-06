@@ -45,7 +45,7 @@ extension ViewController {
         
         let timesTable = Int(sliderValue.value * 20)
         
-        cell.textLabel?.text = String(timesTable * indexPath)
+        cell.textLabel?.text = String(timesTable * indexPath.row)
         
         return cell
     }
