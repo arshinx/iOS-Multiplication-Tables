@@ -40,7 +40,12 @@ extension ViewController {
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        
+        let timesTable = Int(sliderValue.value * 20)
+        
+        cell.textLabel?.text = String(timesTable * indexPath)
         
         return cell
     }
