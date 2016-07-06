@@ -24,14 +24,26 @@
                                     <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="8jf-sL-JZM"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQi-JY-ApW">
+                                <rect key="frame" x="162" y="242" width="276" height="115"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dqC-9u-Ybs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="979-FL-sbJ"/>
                             <constraint firstItem="dqC-9u-Ybs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="axz-E0-eAR"/>
                             <constraint firstItem="dqC-9u-Ybs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iSL-Yj-DK3"/>
+                            <constraint firstItem="YQi-JY-ApW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nBO-qf-aNQ"/>
+                            <constraint firstItem="YQi-JY-ApW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nM2-L4-pLM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="YQi-JY-ApW" id="dDb-a4-t4X"/>
+                        <outlet property="sliderValue" destination="dqC-9u-Ybs" id="RT5-Lg-h6Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
