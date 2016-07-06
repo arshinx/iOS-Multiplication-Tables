@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
  
     // Outlets
     @IBOutlet weak var sliderValue: UISlider!
@@ -26,6 +26,23 @@ class ViewController: UIViewController {
         
     }
 
-
 }
 
+// Table View
+
+extension ViewController {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 20
+    
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        
+        return cell
+    }
+    
+}
