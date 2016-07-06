@@ -24,8 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate {
     // View Loads
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+
     }
 
 }
