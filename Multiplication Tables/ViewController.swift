@@ -12,10 +12,12 @@ class ViewController: UIViewController, UITableViewDelegate {
  
     // Outlets
     @IBOutlet weak var sliderValue: UISlider!
+    @IBOutlet weak var table: UITableView!
     
     // Actions
     @IBAction func sliderMoved(sender: AnyObject) {
         
+        table.reloadData()
         
     }
     
