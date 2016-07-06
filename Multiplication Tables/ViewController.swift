@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func sliderMoved(sender: AnyObject) {
+    }
+    
+    // View Loads
     override func viewDidLoad() {
         super.viewDidLoad()
         
